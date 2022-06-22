@@ -33,14 +33,14 @@
 </template>
 
 <script lang="ts">
-import { IonItemGroup, IonContent, IonInput, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonImg } from '@ionic/vue';
+import { IonItemGroup, IonContent, IonInput, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonImg, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'ListItem',
     components: {
         IonItemGroup,
         IonItem,
-        IonCardHeader, IonCard, IonCardTitle, IonCardContent, IonText, IonImg
+        IonCardHeader, IonCard, IonCardTitle, IonCardContent, IonText, IonImg, IonButton
     },
     props: {
         element: {},

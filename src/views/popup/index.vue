@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import { IonContent, IonInput, IonItem, IonLabel } from '@ionic/vue';
+import { IonContent, IonInput, IonItem, IonLabel,IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'PopUp',
@@ -55,7 +55,8 @@ export default defineComponent({
     IonContent,
     IonInput,
     IonItem,
-    IonLabel
+    IonLabel,
+    IonButton
   },
   props: {
     show: { default: false, type: Boolean },
