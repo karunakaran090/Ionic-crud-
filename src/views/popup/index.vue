@@ -22,7 +22,6 @@
             <ion-item>
               <ion-label position="floating">Text Content</ion-label>
               <ion-textarea name="textValue" :value=data.text></ion-textarea>
-              <!-- <ion-input type="text" name="textValue" :value=data.text></ion-input> -->
             </ion-item>
           </ion-item-group>
           <ion-item-group>
@@ -47,7 +46,7 @@
 </template>
 
 <script>
-import { IonContent, IonInput, IonItem, IonLabel,IonButton } from '@ionic/vue';
+import { IonContent, IonInput, IonItem, IonLabel,IonButton,IonTextarea } from '@ionic/vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'PopUp',
@@ -56,7 +55,8 @@ export default defineComponent({
     IonInput,
     IonItem,
     IonLabel,
-    IonButton
+    IonButton,
+    IonTextarea
   },
   props: {
     show: { default: false, type: Boolean },
